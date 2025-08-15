@@ -1,0 +1,52 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#10B981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34D399;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0C4A6E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#065F46;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Outer circle -->
+    <circle cx="20" cy="20" r="18" fill="url(#logoGradient)" opacity="0.1"/>
+    
+    <!-- Main diamond/crystal shape representing refinement -->
+    <path d="M20 5 L30 15 L20 25 L10 15 Z" fill="url(#logoGradient)" opacity="0.8"/>
+    
+    <!-- Inner refinement lines -->
+    <path d="M20 8 L27 15 L20 22 L13 15 Z" fill="none" stroke="url(#logoGradient)" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Center dot -->
+    <circle cx="20" cy="15" r="2" fill="url(#logoGradient)"/>
+    
+    <!-- Sparkle effects -->
+    <g opacity="0.7">
+      <path d="M8 8 L10 10 L8 12 L6 10 Z" fill="#34D399"/>
+      <path d="M32 8 L34 10 L32 12 L30 10 Z" fill="#0EA5E9"/>
+      <path d="M8 22 L10 24 L8 26 L6 24 Z" fill="#10B981"/>
+      <path d="M32 22 L34 24 L32 26 L30 24 Z" fill="#34D399"/>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(55, 15)">
+    <!-- Refine -->
+    <text x="0" y="20" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700" fill="url(#textGradient)">
+      Refine
+    </text>
+    <!-- .new -->
+    <text x="85" y="20" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="400" fill="#10B981">
+      .new
+    </text>
+  </g>
+  
+  <!-- Subtle underline -->
+  <line x1="55" y1="38" x2="145" y2="38" stroke="url(#logoGradient)" stroke-width="2" opacity="0.3"/>
+</svg>
